@@ -2,8 +2,6 @@
 This repo implements the idea of FastAPI.
 
 
-# FastAPI
-This repo implements the idea of FastAPI.
 =======
 
 
@@ -12,6 +10,19 @@ To Run the server:
 ```
 fastapi dev main.py
 ```
+
+To see the api result on the browser:
+
+```
+localhost:8000
+```
+
+To test this api open
+
+```
+localhost:8000/docs
+```
+
 
 ## Python versions
 Installing and managing Python itself.
@@ -238,5 +249,7 @@ uv pip --version  # Can be used with a subcommand
 
 ## **DOCS:**
 
-- UV docs : 
+- UV docs : https://docs.astral.sh/uv/
+- Fastapi docs: https://fastapi.tiangolo.com/
+
 
