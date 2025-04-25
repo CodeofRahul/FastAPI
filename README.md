@@ -4,24 +4,52 @@ This repo implements the idea of FastAPI.
 
 =======
 
+## HTTP methods:
+
+- GET is used to retrieve data.
+- POST is used to add new data.
+- PUT is used to update existing data.
+- DELETE is used to remove data.
 
 To Run the server:
 
 ```
 fastapi dev main.py
 ```
+```Commands
+│ dev   Run a FastAPI app in development mode. 🧪                                                                         │
+│ run   Run a FastAPI app in production mode. 🚀  
+```
 
-To see the api result on the browser:
+To see the api result, open in the browser:
 
 ```
 localhost:8000
 ```
 
-To test this api open
+To see the api result in browser with parameter value:
+
+```
+http://localhost:8000/greet?name=rohit&age=24
+```
+
+To test the api using Swagger UI:
 
 ```
 localhost:8000/docs
 ```
+# **HTTP Methods**
+
+- **GET : ** The GET method is used to retrieve data from a server. It’s a safe method, meaning it doesn’t modify the server’s state. If making the same request multiple times will yield the same result.
+
+- **POST : ** POST is used to send data to a server to create a new resource. If making the same request multiple times can result in different outcomes.
+
+- **DELETE : ** DELETE is used to remove a resource from the server.
+
+- **PUT : ** PUT is used to update an existing resource or create a new one if it doesn’t exist.
+
+- **PATCH : ** PATCH is used to partially update a resource.
+
 
 
 ## Python versions
@@ -38,7 +66,7 @@ Installing and managing Python itself.
 Executing standalone Python scripts, e.g., example.py.
 
 - `uv run`: Run a script.
-- `uv add --script`: Add a dependency to a script
+- `uv add --script`: Add a dependency to a script (uv add pydantic)
 - `uv remove --script`: Remove a dependency from a script
 
 ### Projects
