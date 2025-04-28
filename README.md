@@ -27,7 +27,7 @@ This repo implements the idea of FastAPI.
 - The data that an API provides or allows us to manipulate. This is accessible through an endpoint.
 
 | ENDPOINT    | HTTP METHOD | DESCRIPTION |
-| -------- | ------- | Savings |
+| -------- | ------- | ------- |
 | /books  | GET    | Get a list of all books |
 | /books | POST     | Create a book |
 | /book/{book_id}    | PATCH    | Update a book |
