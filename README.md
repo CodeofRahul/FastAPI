@@ -4,6 +4,36 @@ This repo implements the idea of FastAPI.
 
 =======
 
+## **What is CRUD:**
+
+- CRUD is an acronym for four functions that are used to manipulate data in a data storage application
+
+## **CRUD:**
+
+**CREATE**
+- create a resource
+
+**READ**
+- Read a resource
+
+**UPDATE**
+- Update a resource
+
+**DELETE**
+- Delete a resource
+
+### **What is a Resource**
+
+- The data that an API provides or allows us to manipulate. This is accessible through an endpoint.
+
+| ENDPOINT    | HTTP METHOD | DESCRIPTION |
+| -------- | ------- | Savings |
+| /books  | GET    | Get a list of all books |
+| /books | POST     | Create a book |
+| /book/{book_id}    | PATCH    | Update a book |
+| /book/{book_id}    | DELETE    | Delete a book |
+
+
 ## HTTP methods:
 
 - GET is used to retrieve data.
@@ -40,15 +70,15 @@ localhost:8000/docs
 ```
 # **HTTP Methods**
 
-- **GET : ** The GET method is used to retrieve data from a server. It’s a safe method, meaning it doesn’t modify the server’s state. If making the same request multiple times will yield the same result.
+- **GET** :  The GET method is used to retrieve data from a server. It’s a safe method, meaning it doesn’t modify the server’s state. If making the same request multiple times will yield the same result.
 
-- **POST : ** POST is used to send data to a server to create a new resource. If making the same request multiple times can result in different outcomes.
+- **POST** :  POST is used to send data to a server to create a new resource. If making the same request multiple times can result in different outcomes.
 
-- **DELETE : ** DELETE is used to remove a resource from the server.
+- **DELETE** : DELETE is used to remove a resource from the server.
 
-- **PUT : ** PUT is used to update an existing resource or create a new one if it doesn’t exist.
+- **PUT** : PUT is used to update an existing resource or create a new one if it doesn’t exist.
 
-- **PATCH : ** PATCH is used to partially update a resource.
+- **PATCH** :  PATCH is used to partially update a resource.
 
 
 
