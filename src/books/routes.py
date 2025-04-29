@@ -8,7 +8,6 @@ book_router = APIRouter()
 
 
 # Define an API endpoint to retrieve all books.
-# The path is '/' and the HTTP method is GET.
 # 'response_model=List[Book]' specifies that the response will be a list of Book objects.
 @book_router.get('/', response_model=List[Book])
 async def get_all_books():
@@ -16,7 +15,6 @@ async def get_all_books():
     return books
 
 # Define an API endpoint to create a new book.
-# The path is '/books' and the HTTP method is POST.
 # 'status_code=status.HTTP_201_CREATED' sets the HTTP status code for a successful creation.
 # 'book_data: Book' indicates that the request body should be a JSON object that can be validated against the Book Pydantic model.
 # '-> dict' specifies that the function will return a dictionary (which FastAPI will automatically convert to JSON).
@@ -30,8 +28,6 @@ async def create_a_book(book_data:Book) -> dict:
     return new_book
 
 # Define an API endpoint to retrieve a specific book by its ID.
-# The path is '/book/{book_id}' where '{book_id}' is a path parameter that will be an integer.
-# The HTTP method is GET.
 # 'book_id: int' specifies that the 'book_id' path parameter should be an integer.
 # '-> dict' specifies that the function will return a dictionary.
 @book_router.get('/{book_id}')
@@ -49,7 +45,6 @@ async def get_book(book_id:int) -> dict:
     )
 
 # Define an API endpoint to update an existing book by its ID.
-# The path is '/book/{book_id}' where '{book_id}' is a path parameter that will be an integer.
 # The HTTP method is PATCH (used for partial updates).
 # 'book_id: int' specifies that the 'book_id' path parameter should be an integer.
 # 'book_update_data: BookUpdateModel' indicates that the request body should be a JSON object that can be validated against the BookUpdateModel.

@@ -311,3 +311,16 @@ uv pip --version  # Can be used with a subcommand
 - Fastapi docs: https://fastapi.tiangolo.com/
 
 
+## **SQL commands:**
+
+Create Database
+
+```
+CREATE DATABASE bookly_db;
+```
+
+To select the of database
+
+```
+select * from books
+```
